@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-8"> 
+		<title> MADLIBS</title>
+	</head>
+
+
+	</body>
+		<!-- Add forms to page -->
+		<form name="example" id="example" method="get" action="">
+			<label for="firstname">First name of someone you know:</label><br>
+				<input type="text" id="firstname"><br>
+			<label for="number">Enter your favorite number:</label><br>
+				<input type="number" id="number"><br>
+			<label for="size">What is your favorite size of animal?</label><br>
+				<input type="radio" name="size" id="enormous">enormous<br>
+				<input type="radio" name="size" id="teenytiny">teeny-tiny<br>
+			<label for="firstname">Choose your favorite adjectives:</label><br>
+				<input type="checkbox" name="vehicle" id="blue">blue<br>
+				<input type="checkbox" name="vehicle" id="robot">robotic<br>
+				<input type="checkbox" name="vehicle" id="fluffy">fluffy<br>
+			<label for="action">Action:</label><br>
+				<select name="action" id="action">
+					<option value="Weird">Weird</option>
+					<option value="Let's follow them">Let's follow them</option>
+				</select>
+			<!-- Get values from forms to submit to javascript -->
+			<input type="submit" value="Submit" onclick="printMadlib(document.getElementById('firstname').value, document.getElementById('number').value, document.getElementById('enormous').checked, document.getElementById('teenytiny').checked, document.getElementById('blue').checked, document.getElementById('robot').checked, document.getElementById('fluffy').checked, document.getElementById('action').value, 'right');return false;">
+		</form> 
+
+	</body>
+
+    <script>
+        function printMadlib(first, number, enormous, teenytiny, blue, robot, fluffy, action) {
+        	if (enormous == true) {
+			    size = "colossal";
+			} else if ( teenytiny == true) {
+			    size = "teeny-tiny";
+			} 
+			var checkbox = [blue, robot, fluffy];
+			var adjectivesList = ['blue', 'robotic', 'fluffy']
+			var adjectives = '';
+
+			for (i = 0; i < checkbox.length; i++) {
+	        	if (checkbox[i] == true) {
+	    			adjectives += adjectivesList[i] + " ";
+	    		}
+			}
+
+	        var madlib = document.createElement("div");  
+
+			if ((first == '') || (number == '') || (checkbox.length == 0) || (enormous==false && teenytiny==false) || isNaN(number)) {
+				madlib.textContent  = "Please correctly fill in all fields before advancing"
+			}
+			else {
+				madlib.textContent = "Today, " + first + " and I were walking to the grocery store when we saw " + number + " " + size + " " + adjectives +" dog(s) running down the street.  " + first + " turned to me and said \""  + action +".\"";
+			}
+
+
+			       
+			document.body.appendChild(madlib); 
+
+        }
+    </script>
+
+
+</html>
+
+
+
+

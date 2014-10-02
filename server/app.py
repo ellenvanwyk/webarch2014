@@ -73,8 +73,8 @@ def i253():
                   "text 30,60 'My %s %s said i253 was %s'" % (relationship, name, adjective),
                 '-raise', '30',
                 'png:-']), 200);
-    # Comment in to set header below
-    # resp.headers['Content-Type'] = '...'
+    
+    resp.headers['Content-Type'] = 'image/png'
 
     return resp
 

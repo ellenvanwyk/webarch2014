@@ -1,0 +1,20 @@
+
+1.  GET /home?name=Ellen%20Van%20Wyk&title=Webarch HTTP/1.1
+
+2.  PUT /wiki  HTTP/1.1
+Host: people.ischool.berkeley.edu/
+Content-Length: 74
+Content-Type: application/x-www-form-urlencoded
+
+url=http://www.adweek.com/files/imagecache/node-blog/blogs/cats_in_ads.jpg
+
+	1. Do a GET request at the same location.
+
+3.POST /wiki  HTTP/1.1
+Host: people.ischool.berkeley.edu/
+Content-Length: 86
+Content-Type: application/x-www-form-urlencoded
+
+url=http://c3.thejournal.ie/media/2014/01/1381790_312019278940359_1276392085_n-390x285.jpg
+
+

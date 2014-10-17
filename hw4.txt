@@ -1,0 +1,26 @@
+
+1. Using 127.0.0.1 $FLASK_PORT
+        1. What is the return code for GET /home HTTP/1.1?
+
+HTTP/1.0 200 OK
+
+        2. What is the return code for GET /wiki HTTP/1.1?
+
+HTTP/1.0 302 FOUND
+
+
+            1. What is the next HTTP statement a browser would send after this return code? (provide the statement as you would type it into telnet)
+
+GET /en.wikipedia.org HTTP/1.1  because I am being redirected there from the original site
+
+        3. What is the return code for PUT /wiki HTTP/1.1?
+
+HTTP/1.0 200 OK
+
+2. Explain what happens when your browser loads http://people.ischool.berkeley.edu/~<USER>/server/wiki from sending the request to loading HTML
+    
+My browser sends a GET request to the page. The school returns the 302 found redirect message.  Then my browser sends a GET request to wikipedia.org.   Wikipedia.org returns a 200 code with the html of their page.
+
+3. What is the return code for http://people.ischool.berkeley.edu/~<USER>/server/ ?
+
+404 Not Found

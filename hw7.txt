@@ -1,0 +1,40 @@
+1. Using:
+host -v -t A m.yelp.com 199.7.83.42
+
+First it queries the root name server at 199.7.83.42
+
+Then it goes to one of the following .com name servers:
+a.gtld-servers.net.	172800	IN	A	192.5.6.30
+b.gtld-servers.net.	172800	IN	A	192.33.14.30
+c.gtld-servers.net.	172800	IN	A	192.26.92.30
+d.gtld-servers.net.	172800	IN	A	192.31.80.30
+e.gtld-servers.net.	172800	IN	A	192.12.94.30
+f.gtld-servers.net.	172800	IN	A	192.35.51.30
+g.gtld-servers.net.	172800	IN	A	192.42.93.30
+h.gtld-servers.net.	172800	IN	A	192.54.112.30
+i.gtld-servers.net.	172800	IN	A	192.43.172.30
+j.gtld-servers.net.	172800	IN	A	192.48.79.30
+k.gtld-servers.net.	172800	IN	A	192.52.178.30
+l.gtld-servers.net.	172800	IN	A	192.41.162.30
+m.gtld-servers.net.	172800	IN	A	192.55.83.30
+
+
+
+2. Using:
+ traceroute m.yelp.com:
+
+the m.yelp.com ip address at 199.255.189.234
+
+
+
+3.No it doesn’t leave the Berkeley network.
+
+Using:
+traceroute amplab.cs.berkeley.edu
+
+traceroute to amplab.cs.berkeley.edu (128.32.37.248), 30 hops max, 60 byte packets
+ 1  g3-35.inr-211-srb.Berkeley.EDU (128.32.78.3)  0.851 ms  0.770 ms  0.703 ms
+ 2  t6-1.inr-202-reccev.Berkeley.EDU (128.32.255.126)  0.752 ms  0.770 ms  0.880 ms
+ 3  reccev-eecs-br-10GE.EECS.Berkeley.EDU (128.32.255.58)  1.764 ms  1.741 ms  1.718 ms
+ 4  soda-10g-edge.EECS.Berkeley.EDU (169.229.59.242)  13.247 ms  13.255 ms  13.380 ms
+ 5  www-research2.CS.Berkeley.EDU (128.32.37.248)  1.305 ms !X  1.286 ms !X  1.794 ms

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" 
+content="text/html;charset=ISO-8859-8" name = "description" content = 
+"Ellen Van Wyk's UX Design portfolio page"> 
+		<title>Ellen Van Wyk's Portfolio</title>
+		<link rel=stylesheet type="text/css" 
+href="css/my_website.css" id="all"/>
+		<link rel=stylesheet type="text/css" 
+href="css/my_website_front.css"  id="front"/>
+	</head>
+
+<body>
+
+
+<div id="about" itemscope="" itemtype="http://schema.org/Person">
+	<h1 class="title" itemprop="name">ELLEN VAN WYK</h1>
+	<h3 itemprop="jobTitle">User Experience Designer</h3>
+	<h3 itemprop="affiliation">UC Berkeley</h3>
+	<img src= "https://ejvw.files.wordpress.com/2014/09/portrait2.jpg" 
+alt = "portrait" style="width:130px;height:auto" itemprop="image">
+		<h2>About</h2>
+		<p style= "line-height:20px;font-family:courier">Ellen Van 
+Wyk studies HCI at the UC Berkeley School of Information.  Her backgrounds 
+in Neurobiogy, scientific illustration, and 3D animation inform her 
+understanding of experience and drive her interaction design
+		</p>
+
+		<ul 
+style="list-style-type:none;font-family:courier;line-height:30px">
+			<li>Design</li>
+	  		<li>Science</li>
+	  		<li>Illustration</li>
+	  		<li><a href="http://greymattersjournal.com/" 
+itemprop="url">Science Communication</a> </li>
+		</ul> 
+		<p itemprop = "email">ejvw at berkeley.edu</p>
+</div>
+
+    
+<div class="dog" itemscope="" itemtype="http://schema.org/ImageObject">
+	<h2 itemprop = "name">DOG</h2>
+	<img src= 
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGPC1y0YIayWnnNAktQKTpjLw1TXEAf-sMQ1v2l9OnPCF6cmYa5g" 
+alt = "dog1" style="width:300px;height:auto" itemProp = "contentUrl">
+	<p itemprop = "about">Picture of a bulldog puppy</p>
+</div>
+
+
+
+<div class = "dog" itemscope ="" 
+itemtype="http://schema.org/Organization">
+		<img src 
+="http://www.berkeley.edu/brand/img/seals/ucbseal_139_540.png" alt = 
+"berkeley logo" style="width:200px;height:auto" itemprop="logo">
+	<p itemprop="name">UC Berkeley <a href = "http://www.berkeley.edu" 
+itemprop="url">Site</a></p>
+	<p itemprop="telephone">555-5555</p>
+	<p itemprop = "owns">School of Information</p>
+
+</div>
+
+</body>
+</html>

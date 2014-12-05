@@ -1,7 +1,7 @@
-H1 {text-align:left; color:white; font: bold  30pt "Andale Mono"} 
+H1 {text-align:left; color:black; font: bold  30pt "Andale Mono"} 
 H2 {text-align:left; color:#000080; font: normal 17pt "Monaco"} 
 H3 {text-align:left; color:#000080; font: normal 12pt "Monaco"} 
-H4 {text-align:left; color:#000080; font: normal 10pt "Monaco"} 
+H4, p {text-align:left; color:#000080; font: normal 10pt "Monaco"} 
 
 body {
     background-color: #FFFFFF;
@@ -10,18 +10,20 @@ body {
  /* navigation bar at top of each page */
 
 #nav {
-    line-height:100px;
+    line-height:10px;
     background-color:#0066CC;
     height:170px;
-    width:2000px;
+    width:1500px;
     float:left;
     padding:10px;
 }
 
+
+
  /* formatting for intro section */
 #about {
     line-height:100px;
-    height:1000px;
+    height:500px;
     width:230px;
     float:left;
     padding:10px;

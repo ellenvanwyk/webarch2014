@@ -23,7 +23,7 @@ def main():
     the current user.  When we see a Vote/Visit line, we append the current
     user to the cell.  Then we write all lines out again (updated or not).
     """
-
+    
     csv_writer = csv.writer(stdout)
     current_user = None
 
@@ -32,17 +32,19 @@ def main():
         if cell[0] == 'C':
             ###
             # FILL IN by replacing below:
-            pass
+            #pass
+            
             # What should we update when we see a new 'C' row?
             ##/
+            user = cell[1]
         elif cell[0] == 'V':
             ###
             # FILL IN by replacing below:
-            pass
+            #pass
             # What should we update when we see a new 'V' row?
             ##/
-
-        csv_writer.writerow(cell)
+            page = cell[1]
+            csv_writer.writerow([user,page])
 
 
 if __name__ == '__main__':
